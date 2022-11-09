@@ -9,6 +9,12 @@ menu "Example configuration"
         help
             I2C address of INA3221. The default is `INA3221_I2C_ADDR_GND`, or
             0x40. See available options in ina3221.h.
+    
+    config EXAMPLE_AWS_IOT_URI
+        string "URI of the AWS IoT endpoint"
+        default "mqtts://sdfsdfsdfw-ats.iot.eu-central-1.amazonaws.com:8883"
+        help
+            URI, including protocol and port. Example: mqtts://sdfsdfsdfw-ats.iot.eu-central-1.amazonaws.com:8883.
 
     choice EXAMPLE_MEASURING_MODE
         prompt "Select measuring mode"
